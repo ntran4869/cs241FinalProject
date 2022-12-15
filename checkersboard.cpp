@@ -216,9 +216,6 @@ int main(){
 				}
 			}
 		}
-		board[4][3].team='0';
-		board[2][1].team=' ';
-		board[5][0].king=1;
 	}
 	printf("\n\nComputer Science Checkers!!\n\n\n");
 	display(board);
