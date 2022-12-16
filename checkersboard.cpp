@@ -3,13 +3,16 @@
 #include <string.h>
 using namespace std;
 
+//Structure of the pieces/board spaces, with their team representing either the player, computer, or a black space, and whether or not they are a king.
 struct Piece {
 	char team;
 	int king=0;
-	Piece *upleft,*upright,*dleft,*dright;
 };
+
+//The board we will be using throughout the game.
 Piece board[8][8];
 
+//The function that desplays and updates the board, it prints the checked pattern and the character value of the pieces.
 void display(Piece board[8][8]){
 	printf("\n");
 	printf("\a");
@@ -21,6 +24,8 @@ void display(Piece board[8][8]){
 	printf("\n    A   B   C   D   E   F   G   H\n");
 }
 
+
+//Functions that allow the pieces to move in each of the legal checkers directions. This includes the possiblity of taking a piece, and has more options for a king piece.
 void upperLeft(int i,int j){
 	if(board[i][j].team=='X'){
 		if(i>0&&j>0){
@@ -195,6 +200,7 @@ void lowerRight(int i, int j){
 	}
 }
 
+//The main function, which builds the pieces in the board, runs the menu and game.
 int main(){
 	for(int i=0;i<8;i++){
 		for(int j=0;j<8;j++){
