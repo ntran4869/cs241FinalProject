@@ -5,3 +5,4 @@ checkersboard: checkersboard.cpp
 
 clean:
 	rm -f checkersboard
+
