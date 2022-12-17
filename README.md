@@ -1,4 +1,5 @@
 Checkers (C++)
+
 Date: 12.18.2022
 
 Author(s): Nguyen Tran, Tobi Bui, Jack Page, Jabir Emeka
