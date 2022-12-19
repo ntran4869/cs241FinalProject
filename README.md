@@ -16,3 +16,7 @@ DEPENDENCIES
 HOW TO RUN THIS PROJECT
 
 - Run make to compile (optionally run make clean before), then run the main program checkers using ./checkers
+
+
+Special thanks to MckennaCisler with the beautiful completed game that we used the workflow to work on. Check it out here:
+https://github.com/MckennaCisler/checkers-cpp
